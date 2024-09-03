@@ -1,5 +1,5 @@
-import { mockedProducts, newProduct } from "./MockedProducts";
-import './NewInCard.css';
+import { mockedProducts, newProduct } from "../MockedData/MockedProducts";
+import "../Cards.css";
 
 export default function NewInCards() {
   return (

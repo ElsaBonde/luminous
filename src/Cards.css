@@ -1,0 +1,151 @@
+.newInCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .newInCards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .newInCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .newInCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.newInCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newInCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.newInLabel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.newInCard h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #989899;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.newInCard p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #636363;
+  font-family: "inter", sans-serif;
+  margin: 0;
+}
+
+.newInCard button {
+  width: 100%;
+  background-color: #c9e5df;
+  color: #fffdf2;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  transition: background-color 0.6s;
+}
+
+.newInCard button:hover {
+  background-color: #fad3ce;
+}
+
+.categoryCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .categoryCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .categoryCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .categoryCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.categoryCards img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.categoryCards h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #989899;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-align: center;
+  margin: 0;
+  transition: color 0.6s;
+}
+
+.categoryCard h3:hover {
+  color: #FAD3CE;
+}
+
+.headlineCategory {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}

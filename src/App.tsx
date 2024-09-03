@@ -1,7 +1,11 @@
 import "./App.css";
-import Header from "./Header";
-import NewInCards from "./NewInCards";
-import SeasonPicture from "./SeasonPicture";
+import CategoryCards from "./components/CategoryCards";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import NewInCards from "./components/NewInCards";
+import Newsletter from "./components/Newsletter";
+import SeasonPicture from "./components/SeasonPicture";
+import VideoMarketing from "./components/VideoMarketing";
 
 function App() {
   return (
@@ -10,7 +14,11 @@ function App() {
       <main>
         <SeasonPicture />
         <NewInCards />
+        <VideoMarketing />
+        <CategoryCards />
+        <Newsletter />
       </main>
+      <Footer />
     </>
   );
 }

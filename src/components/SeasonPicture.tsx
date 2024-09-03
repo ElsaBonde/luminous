@@ -1,5 +1,5 @@
-import seasonPicture from './assets/seasonpic.jpg';
-import "./App.css";
+import seasonPicture from '../assets/seasonpic.jpg';
+import "../App.css";
 
 export default function SeasonPicture() {
     return (

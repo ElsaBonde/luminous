@@ -1,7 +1,7 @@
-import mascara from './assets/mascara.jpg';
-import blush from './assets/rouge.jpg';
-import highlighter from './assets/highlighter.jpg';
-import lipstick from './assets/lipstick.jpg';
+import mascara from '../assets/mascara.jpg';
+import blush from '../assets/rouge.jpg';
+import highlighter from '../assets/highlighter.jpg';
+import lipstick from '../assets/lipstick.jpg';
 
 export interface newProduct {
     id: number;
