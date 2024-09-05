@@ -4,7 +4,7 @@ import { mockedCategorys } from "../MockedData/MockedCategorys";
 export default function CategoryCards() {
   return (
     <>
-      <h1 className="headlineCategory">Shop by category</h1>
+      <h2 className="headlineCategory">Shop by category</h2>
       <div className="categoryCards">
         {mockedCategorys.map((category) => (
           <div key={category.id} className="categoryCard">

@@ -1,7 +1,6 @@
 #root {
   background-color: #fafaf3;
   margin: 0 auto;
- 
 }
 
 main {
@@ -36,7 +35,6 @@ main {
   color: #FFFDF2; 
   text-align: center;
   gap: 100px;
-  font-family: 'inter', sans-serif;
 }
 
 .newSeason {
@@ -56,7 +54,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .newInButton:hover {
@@ -76,21 +73,15 @@ video {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: 'inter', sans-serif;
   background-color: #fdd9b9;
   padding: 25px;
 }
 
 .newsletter h2 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 700;
   margin: 0;
 }
 
 .newsletter p {
-  font-size: 16px;
-  font-weight: 600;
   width: 70%;
 }
 
@@ -103,6 +94,7 @@ form label {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form input {
@@ -110,12 +102,13 @@ form input {
   border: 1px solid #989899;
   border-radius: 5px;
   width: 40%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form button {
   background-color: transparent;
-  color: #FFFDF2;
-  border: 2px solid #FFFDF2;
+  color: #333;
+  border: 1px solid #333;
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
@@ -131,6 +124,6 @@ form button {
 }
 
 form button:hover {
-  background-color: #FFFDF2;
+  background-color: #333;
   color: #fdd9b9; 
 }

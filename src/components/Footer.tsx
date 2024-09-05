@@ -1,11 +1,14 @@
 import "../Footer.css";
+import symbol from "../assets/symbol-eyes.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
     <footer>
       <div className="outerDiv">
-        <div className="aboutUs">
-          <h3>ABOUT US</h3>
+        <div className="about-us">
+          <h2>ABOUT US</h2>
           <p>
             At Luminous, we believe that beauty and health should go hand in
             hand. That's why we are dedicated to creating high-quality,
@@ -21,18 +24,22 @@ export default function Footer() {
           </p>
         </div>
         <div className="socials">
-          <h3>OUR SOCIALS</h3>
-          <li>
-            <a href="https://www.facebook.com/">Facebook</a>
+          <h2>OUR SOCIALS</h2>
+          <li className="social-icons">
+          <FontAwesomeIcon icon={faFacebook} size="2x" />
+          <span>Luminous Co.</span>
           </li>
-          <li>
-            <a href="https://www.instagram.com/">Instagram</a>
+          <li className="social-icons">
+            <FontAwesomeIcon icon={faInstagram} size="2x"/> 
+            <span>Luminousbeauty</span>
           </li>
-          <li>
-            <a href="https://www.twitter.com/">Twitter</a>
+          <li className="social-icons">
+          <FontAwesomeIcon icon={faTwitter} size="2x"/> 
+          <span>Luminousbeauty</span>
           </li>
         </div>
       </div>
+      <img src={symbol} alt="Luminous symbol" className="symbol-image" />
     </footer>
   );
 }

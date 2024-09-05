@@ -1,9 +1,13 @@
 import "../Header.css";
+import logotype from "../assets/logotyp.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   return (
     <header>
-      <h1>Luminous</h1>
+      <img src={logotype} alt="Luminous" />
+      <FontAwesomeIcon icon={faBars} className="hamburger-menu"/> 
       <nav>
         <ul>
           <li>New in</li>
