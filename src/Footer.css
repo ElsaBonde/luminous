@@ -86,6 +86,25 @@ footer::before {
     color: #E2B7B3;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) { 
+    footer {
+      padding: 20px;
+    }
+
+    .outerDiv {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .symbol-image {
+      top: -60px;
+    }
+
+    footer::before {
+      display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     footer {
       padding: 15px;

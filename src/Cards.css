@@ -1,7 +1,7 @@
 .newInCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 @media (min-width: 1200px) {
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .newInCard img {
@@ -48,7 +48,7 @@
   font-weight: 600;
   font-family: "inter", sans-serif;
   text-transform: uppercase;
-  padding: 0.5rem 1.5rem;
+  padding: 8px 24px;
   border-radius: 4px;
 }
 
@@ -80,10 +80,16 @@
   background-color: #e2b7b3;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .newInCard img {
+    height: 450px;
+    object-position: 100% 32%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .newInCard img {
     height: 400px;
-    object-fit: cover;
     object-position: 100% 36%;
   }
   
@@ -92,7 +98,7 @@
 .categoryCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .categoryCard {
@@ -101,7 +107,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   cursor: pointer;
 }
 

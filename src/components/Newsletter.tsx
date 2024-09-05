@@ -11,7 +11,6 @@ export default function Newsletter() {
             <input type="email"/>
             <button>Subscribe</button>
         </form>
-           
         </div>
     );
     }
