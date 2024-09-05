@@ -68,3 +68,39 @@ footer::before {
 .social-icons:hover {
     color: #E2B7B3;
 }
+
+.line {
+    width: 100%;
+    height: 2px;
+    border: 0;
+    background-color: #FDD9B9;
+    margin: 20px 0px;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #E2B7B3;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+      padding: 15px;
+    }
+
+    .outerDiv {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .symbol-image {
+      top: -50px;
+    }
+  
+    footer::before {
+      display: none;
+    }
+}

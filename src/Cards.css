@@ -80,6 +80,15 @@
   background-color: #e2b7b3;
 }
 
+@media screen and (max-width: 767px) {
+  .newInCard img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 36%;
+  }
+  
+}
+
 .categoryCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -141,4 +150,13 @@
 .headlineCategory {
   margin: 20px 0px 0px 0px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .categoryCards img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 60%;
+  }
+  
 }

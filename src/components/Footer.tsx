@@ -40,6 +40,8 @@ export default function Footer() {
         </div>
       </div>
       <img src={symbol} alt="Luminous symbol" className="symbol-image" />
+      <hr className="line"/>
+      <p className="copyright">© Luminous 2024</p>
     </footer>
   );
 }

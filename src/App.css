@@ -39,6 +39,7 @@ main {
 
 .newSeason {
   font-size: 32px; 
+  color: #FFFDF2;
 }
 
 .newInButton {
@@ -56,6 +57,37 @@ main {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+
+  .season-picture img {
+    height: 300px;
+  }
+
+  .overPicture {
+    top: 45%; 
+    left: 35%; 
+    transform: translate(-50%, -50%); 
+    gap: 50px;
+  }
+
+  .newSeason {
+    font-size: 26px; 
+    text-align: left;
+    width: 65%;
+  }
+
+  .newInButton {
+    padding: 10px 15px 10px 15px;
+    font-size: 14px;
+  }
+
+}
+
+  .newInButton {
+    padding: 10px 15px 10px 15px;
+    font-size: 14px;
+}
+
 .newInButton:hover {
   background-color: #FFFDF2;
   color: #989899; 
@@ -67,6 +99,13 @@ video {
   object-fit: cover;
   object-position: 80% 65%;
 
+}
+
+@media screen and (max-width: 767px) {
+  video {
+    height: 300px;
+  }
+  
 }
 
 .newsletter {
@@ -119,11 +158,31 @@ form button {
   align-items: center;
   justify-content: center;
   width: 20%;
-  max-width: 150px;
+  max-width: 170px;
   margin-top: 16px;
 }
 
 form button:hover {
   background-color: #333;
   color: #fdd9b9; 
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter {
+    padding: 15px;
+   margin-bottom: 50px;
+  }
+
+  .newsletter p {
+    width: 100%;
+  }
+
+  form input {
+    width: 95%;
+  }
+
+  form button {
+    width: 60%;
+  }
+  
 }
